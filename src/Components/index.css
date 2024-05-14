@@ -1,0 +1,118 @@
+.dice-item.animation {
+    animation: shake 1s ease infinite;
+}
+
+.dice-item {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    margin-right: 12px;
+    animation: shake 1s ease;
+}
+
+.dice-item img {
+    width: 60px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.wrapper-layout-baucua {
+    position: relative;
+    width: 790px;
+}
+
+.wrapper-layout-baucua .shrimp,
+.wrapper-layout-baucua .crab,
+.wrapper-layout-baucua .fish,
+.wrapper-layout-baucua .chicken,
+.wrapper-layout-baucua .calabash,
+.wrapper-layout-baucua .tiger {
+    position: absolute;
+    cursor: pointer;
+}
+
+.wrapper-layout-baucua .shrimp:hover,
+.wrapper-layout-baucua .crab:hover,
+.wrapper-layout-baucua .fish:hover,
+.wrapper-layout-baucua .chicken:hover,
+.wrapper-layout-baucua .calabash:hover,
+.wrapper-layout-baucua .tiger:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper-layout-baucua .shrimp.actived,
+.wrapper-layout-baucua .crab.actived,
+.wrapper-layout-baucua .fish.actived,
+.wrapper-layout-baucua .chicken.actived,
+.wrapper-layout-baucua .calabash.actived,
+.wrapper-layout-baucua .tiger.actived {
+    background-color: rgba(20, 20, 230, 0.5);
+}
+
+.wrapper-layout-baucua .tiger {
+    top: 26px;
+    left: 27px;
+    width: 242px;
+    height: 195px;
+    border-radius: 8px;
+}
+
+.wrapper-layout-baucua .calabash {
+    top: 26px;
+    left: 273px;
+    width: 242px;
+    height: 195px;
+    border-radius: 8px;
+}
+
+.wrapper-layout-baucua .chicken {
+    top: 26px;
+    right: 27px;
+    width: 242px;
+    height: 195px;
+    border-radius: 8px;
+}
+
+.wrapper-layout-baucua .fish {
+    bottom: 23px;
+    left: 273px;
+    width: 242px;
+    height: 195px;
+    border-radius: 8px;
+}
+
+.wrapper-layout-baucua .crab {
+    bottom: 23px;
+    right: 27px;
+    width: 242px;
+    height: 195px;
+    border-radius: 8px;
+}
+
+.wrapper-layout-baucua .shrimp {
+    bottom: 23px;
+    left: 27px;
+    width: 242px;
+    height: 195px;
+    border-radius: 8px;
+}
